@@ -1,0 +1,21 @@
+/* Home.css */
+.me-img {
+    width: 100%; /* Adjust width to be responsive */
+    height: auto;
+    animation: popIn 1.5s ease-out forwards;
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

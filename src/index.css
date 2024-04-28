@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+nav{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 80px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav ul{
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+nav ul li{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+nav ul li:hover{
+  background: #000;
+  color: #fff;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+
+h1{
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+p{
+  font-size: 1.4rem;
+  font-weight: medium;
+  color: black;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn{
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.hireme{
+  background-color: #fff;
+  border: 2px solid black;
+}
+
+.hireme:hover{
+ background-color: black;
+ color: white;
+}
+
+.seeproject{
+  background-color: #0d0b0b;
+  color: #f8f4f4;
+  border: 2px solid black;
+}
+
+.seeproject:hover{
+ background-color: rgb(233, 219, 219);
+ color: rgb(22, 8, 8);
+}
+
+figure{
+  position: relative;
+
+}
+
+.me-img{
+  border: 7px solid black;
+  border-bottom-left-radius: 50%;
+
+}
+
+
+@media screen and (min-width:800px){
+  .content{
+    flex-direction: row;
+    margin: 80px;
+  }
+
+  .btn{
+    padding: 20px 30px;
+    font-size: 1.2rem;
+  }
+
+  .buttons{
+    margin: 0;
+  }
 }
